@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zpl-kQ-1s1">
+                                <rect key="frame" x="620" y="120" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Xu6-3P-qxR"/>
+                                    <constraint firstAttribute="height" constant="50" id="g6U-L7-bcw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KPe-gc-gSO">
+                                <rect key="frame" x="127" y="229" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MUC-zW-vOt"/>
+                                    <constraint firstAttribute="height" constant="50" id="nns-zs-6io"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OEk-9q-0cX">
+                                <rect key="frame" x="283" y="620" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="a3N-IN-e10"/>
+                                    <constraint firstAttribute="width" constant="100" id="sOE-be-6uW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OEk-9q-0cX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="600" id="8La-z6-5pe"/>
+                            <constraint firstItem="Zpl-kQ-1s1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="QQs-tZ-ZA1"/>
+                            <constraint firstItem="KPe-gc-gSO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="107" id="Sv1-80-p7g"/>
+                            <constraint firstItem="Zpl-kQ-1s1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="600" id="ZPh-qy-Rok"/>
+                            <constraint firstItem="KPe-gc-gSO" firstAttribute="top" secondItem="Zpl-kQ-1s1" secondAttribute="bottom" constant="59" id="cVF-mS-UGv"/>
+                            <constraint firstItem="OEk-9q-0cX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="263" id="dtg-Xf-0KO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Zpl-kQ-1s1" id="oDp-c8-eo5"/>
+                        <outlet property="imageView2" destination="KPe-gc-gSO" id="KAb-1W-H3T"/>
+                        <outlet property="imageView3" destination="OEk-9q-0cX" id="Ypd-mJ-hK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="339"/>
+        </scene>
+    </scenes>
+</document>
